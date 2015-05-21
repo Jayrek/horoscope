@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Horoscope</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!--horoscope text-->
+    <string name="aries">Aries</string>
+    <string name="taurus">Taurus</string>
+    <string name="gemini">Gemini</string>
+    <string name="cancer">Cancer</string>
+    <string name="leo">Leo</string>
+    <string name="virgo">Virgo</string>
+    <string name="libra">Libra</string>
+    <string name="scorpio">Scorpio</string>
+    <string name="sagittarius">Sagittarius</string>
+    <string name="capricorn">Capricorn</string>
+    <string name="aquarius">Aquarius</string>
+    <string name="pisces">Pisces</string>
+
+    <!--horoscope dates-->
+    <string name="aries_date">21/03&#8211;19/04</string>
+    <string name="taurus_date">20/04&#8211;20/05</string>
+    <string name="gemini_date">21/05&#8211;06/21</string>
+    <string name="cancer_date">22/06&#8211;22/07</string>
+    <string name="leo_date">23/07&#8211;22/08</string>
+    <string name="virgo_date">23/08&#8211;22/09</string>
+    <string name="libra_date">23/09&#8211;22/10</string>
+    <string name="scorpio_date">23/10&#8211;21/11</string>
+    <string name="sagittarius_date">22/11&#8211;21/12</string>
+    <string name="capricorn_date">22/12&#8211;19/01</string>
+    <string name="aquarius_date">20/01&#8211;18/02</string>
+    <string name="pisces_date">20/03&#8211;02/19</string>
+</resources>
+
