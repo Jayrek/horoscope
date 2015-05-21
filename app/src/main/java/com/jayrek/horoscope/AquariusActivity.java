@@ -17,6 +17,7 @@ import java.util.Locale;
 public class AquariusActivity extends Activity {
     TextView sign, date, desc, backSign;
     ImageView img_sign;
+    //commit and push...
 
     private String finalUrl = "http://www.findyourfate.com/rss/dailyhoroscope-feed.asp?sign=Aquarius";
     private HandleXML obj;
