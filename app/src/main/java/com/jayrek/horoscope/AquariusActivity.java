@@ -3,6 +3,7 @@ package com.jayrek.horoscope;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -56,6 +57,7 @@ public class AquariusActivity extends Activity {
             }
         });
 
+        Log.d("commit","pushit");
     }
 
     public  void initVar() {
