@@ -1,6 +1,8 @@
 package com.jayrek.horoscope;
 
 
+import android.util.Log;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
@@ -14,6 +16,7 @@ import java.net.URL;
 public class HandleXML {
 
     private String desc = "description";
+    private String title = "title";
 
     private String urlString = null;
     private XmlPullParserFactory xmlFactoryObject;
@@ -25,6 +28,10 @@ public class HandleXML {
 
     public  String getDesc(){
         return desc;
+    }
+
+    public String getTitle(){
+        return title;
     }
 
     public void parseXMLAndrStoreIt(XmlPullParser myParser){
@@ -43,6 +50,9 @@ public class HandleXML {
                     case XmlPullParser.END_TAG:
                         if(name.equals("description")){
                             desc = text;
+                        }
+                        else if(name.equals("title")){
+                            title = text;
                         }
                         else{
 
@@ -81,7 +91,9 @@ public class HandleXML {
                     stream.close();
 
                 }
-                catch(Exception e){}
+                catch(Exception e){
+
+                }
             }
         });
         thread.start();

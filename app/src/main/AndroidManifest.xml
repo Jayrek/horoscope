@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jayrek.horoscope" >
+    package="com.jayrek.horoscope">
 
     <!--<uses-sdk-->
-        <!--android:minSdkVersion="18"-->
-        <!--android:targetSdkVersion="21"/>-->
+    <!--android:minSdkVersion="18"-->
+    <!--android:targetSdkVersion="21"/>-->
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.NoActionBar" >
+        android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
             android:configChanges="orientation"
+            android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--daily-->
-        <activity android:name="com.jayrek.horoscope.AriesActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.TaurusActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.GeminiActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.CancerActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.LeoActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.VirgoActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.SagittariusActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.ScorpioActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.LibraActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.CapricornActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.AquariusActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscope.PiscesActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
 
-        <!--monthly-->
-        <activity android:name="com.jayrek.horoscopemonthly.AriesMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.TaurusMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.GeminiMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.CancerMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.LeoMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.VirgoMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.SagittariusMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.ScorpioMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.LibraMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.CapricornMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.AquariusMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopemonthly.PiscesMonthlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.jayrek.horoscope.SelectTimeHoroscope"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
 
-        <!--yearly-->
-        <activity android:name="com.jayrek.horoscopeyearly.AquariusYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.AriesYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.CancerYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.CapricornYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.GeminiYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.LeoYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.LibraYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.PiscesYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.SagittariusYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.ScorpioYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.TaurusYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
-        <activity android:name="com.jayrek.horoscopeyearly.VirgoYearlyActivity" android:configChanges="orientation" android:screenOrientation="portrait"/>
+        <activity
+            android:name=".DailyActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".YearlyActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MonthlyActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
 
 
     </application>

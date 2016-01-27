@@ -58,33 +58,18 @@
                 android:layout_weight="1"
                 android:layout_marginRight="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="ariesAction">
+                android:clickable="true">
 
                 <ImageView
                     android:id="@+id/img_aries"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/aries"
+                    android:src="@drawable/aries"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY"/>
 
-                <!--<TextView-->
-                    <!--android:id="@+id/ed_aries"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold" />-->
 
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/aries_date"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="#ffcc00"/>-->
             </LinearLayout>
 
             <LinearLayout
@@ -95,34 +80,17 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="taurusAction">
+                android:clickable="true">
 
                 <ImageView
-                    android:id="@+id/btn_taurus"
+                    android:id="@+id/img_taurus"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/taurus"
-                    android:clickable="false"
+                    android:src="@drawable/taurus"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
 
-                <!--<TextView-->
-                    <!--android:id="@+id/ed_taurus"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/taurus_date"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="#ffcc00"/>-->
             </LinearLayout>
 
             <LinearLayout
@@ -133,16 +101,15 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="geminiAction">
+                android:clickable="true">
 
                 <ImageView
-                    android:id="@+id/btn_gemini"
+                    android:id="@+id/img_gemini"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/gemini"
-                    android:clickable="false"
+                    android:src="@drawable/gemini"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
 
                 <!--<TextView-->
@@ -182,34 +149,16 @@
                 android:layout_weight="1"
                 android:layout_marginRight="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="cancerAction">
+                android:clickable="true">
 
                 <ImageView
-                    android:id="@+id/btn_cancer"
+                    android:id="@+id/img_cancer"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/cancer"
-                    android:clickable="false"
+                    android:src="@drawable/cancer"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
-
-                <!--<TextView-->
-                    <!--android:id="@+id/ed_cancer"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/cancer_date"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="#ffcc00"/>-->
             </LinearLayout>
 
             <LinearLayout
@@ -220,34 +169,17 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="leoAction">
+                android:clickable="true">
 
                 <ImageView
-                    android:id="@+id/btn_leo"
+                    android:id="@+id/img_leo"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/leo"
-                    android:clickable="false"
+                    android:src="@drawable/leo"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
 
-                <!--<TextView-->
-                    <!--android:id="@+id/ed_leo"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/leo_date"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="#ffcc00"/>-->
 
             </LinearLayout>
             <LinearLayout
@@ -258,16 +190,15 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="virgoAction">
+                android:clickable="true">
 
                 <ImageView
-                    android:id="@+id/btn_virgo"
+                    android:id="@+id/img_virgo"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/virgo"
-                    android:clickable="false"
+                    android:src="@drawable/virgo"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
 
                 <!--<TextView-->
@@ -307,35 +238,18 @@
                 android:layout_weight="1"
                 android:layout_marginRight="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="libraAction">
+                android:clickable="true">
 
 
                 <ImageView
-                    android:id="@+id/btn_libra"
+                    android:id="@+id/img_libra"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/libra"
-                    android:clickable="false"
+                    android:src="@drawable/libra"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
 
-            <!--<TextView-->
-                <!--android:id="@+id/ed_sagittarius"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:gravity="center_vertical|center_horizontal"-->
-                <!--android:textColor="@android:color/white"-->
-                <!--android:textSize="17sp"-->
-                <!--android:textStyle="bold" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/sagittarius_date"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="#ffcc00"/>-->
             </LinearLayout>
 
             <LinearLayout
@@ -346,34 +260,17 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="scorpioAction">
+                android:clickable="true">
 
                 <ImageView
-                    android:id="@+id/btn_scorpio"
+                    android:id="@+id/img_scorpio"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/scorpio"
-                    android:clickable="false"
+                    android:src="@drawable/scorpio"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
 
-                <!--<TextView-->
-                    <!--android:id="@+id/ed_scorpio"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/scorpio_date"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="#ffcc00"/>-->
             </LinearLayout>
 
             <LinearLayout
@@ -384,34 +281,16 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="sagittariusAction" >
+                android:clickable="true" >
 
                 <ImageView
-                    android:id="@+id/btn_sagittarius"
+                    android:id="@+id/img_sagittarius"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/sagittarius"
-                    android:clickable="false"
+                    android:src="@drawable/sagittarius"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
-
-                <!--<TextView-->
-                    <!--android:id="@+id/ed_libra"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/libra_date"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="#ffcc00"/>-->
 
             </LinearLayout>
         </LinearLayout>
@@ -432,34 +311,17 @@
                 android:layout_weight="1"
                 android:layout_marginRight="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="capricornAction">
+                android:clickable="true">
 
                 <ImageView
-                    android:id="@+id/btn_capricorn"
+                    android:id="@+id/img_capricorn"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/capricorn"
-                    android:clickable="false"
+                    android:src="@drawable/capricorn"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
 
-                <!--<TextView-->
-                    <!--android:id="@+id/ed_capricorn"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/capricorn_date"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="#ffcc00"/>-->
 
             </LinearLayout>
             <LinearLayout
@@ -470,34 +332,17 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="aquariusAction">
+                android:clickable="true">
 
                 <ImageView
-                    android:id="@+id/btn_aquarius"
+                    android:id="@+id/img_aquarius"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/aquarius"
-                    android:clickable="false"
+                    android:src="@drawable/aquarius"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
 
-                <!--<TextView-->
-                    <!--android:id="@+id/ed_aquarius"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/aquarius_date"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="#ffcc00"/>-->
 
             </LinearLayout>
             <LinearLayout
@@ -508,34 +353,17 @@
                 android:layout_weight="1"
                 android:layout_marginLeft="10sp"
                 android:orientation="vertical"
-                android:clickable="true"
-                android:onClick="piscesAction">
+                android:clickable="true">
 
                 <ImageView
-                    android:id="@+id/btn_pisces"
+                    android:id="@+id/img_pisces"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_gravity="center_vertical|center_horizontal"
-                    android:background="@drawable/pisces"
-                    android:clickable="false"
+                    android:src="@drawable/pisces"
+                    android:onClick="ClickHoroscope"
                     android:scaleType="fitXY" />
 
-                <!--<TextView-->
-                    <!--android:id="@+id/ed_pisces"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="@android:color/white"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold" />-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/pisces_date"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:gravity="center_vertical|center_horizontal"-->
-                    <!--android:textColor="#ffcc00"/>-->
 
             </LinearLayout>
         </LinearLayout>
