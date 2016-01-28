@@ -54,7 +54,7 @@ public class MonthlyActivity extends Activity {
 
     }
 
-    public void BackClick(View v){
+    public void BackClick(View v) {
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
         overridePendingTransition(R.anim.abc_slide_in_top, R.anim.abc_slide_out_bottom);
@@ -65,15 +65,10 @@ public class MonthlyActivity extends Activity {
     public boolean isOnline(Context c) {
         ConnectivityManager cm = (ConnectivityManager) c.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo ni = cm.getActiveNetworkInfo();
-
-        if (ni != null && ni.isConnected()) {
-            return true;
-        } else {
-            return false;
-        }
+        return (ni != null && ni.isConnected());
     }
 
-    public void checkInternet(){
+    public void checkInternet() {
         if (!isOnline(this)) {
             showDialog(DIALOG_ERROR_CONNECTION);
         } else {

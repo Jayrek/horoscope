@@ -35,18 +35,14 @@ public class YearlyActivity extends Activity {
         setContentView(R.layout.fragment_desc);
         initVar();
 
-
         checkInternet();
-
         Bundle extras = getIntent().getExtras();
-        if(extras != null) {
+        if (extras != null) {
             sign = extras.getString("sign");
             horoscope = extras.getString("horoscope");
-            finalUrl = "http://www.findyourfate.com/rss/"+ horoscope +"-horoscope.asp?sign=" + sign;
+            finalUrl = "http://www.findyourfate.com/rss/" + horoscope + "-horoscope.asp?sign=" + sign;
 
         }
-
-        checkInternet();
 
         obj = new HandleXML(finalUrl);
         obj.fetchXML();
@@ -66,15 +62,10 @@ public class YearlyActivity extends Activity {
     public boolean isOnline(Context c) {
         ConnectivityManager cm = (ConnectivityManager) c.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo ni = cm.getActiveNetworkInfo();
-
-        if (ni != null && ni.isConnected()) {
-            return true;
-        } else {
-            return false;
-        }
+        return (ni != null && ni.isConnected());
     }
 
-    public void checkInternet(){
+    public void checkInternet() {
         if (!isOnline(this)) {
             showDialog(DIALOG_ERROR_CONNECTION);
         } else {

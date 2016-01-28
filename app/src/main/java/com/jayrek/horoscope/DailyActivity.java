@@ -19,7 +19,7 @@ import java.util.Locale;
 /**
  * Created by BOS-pc on 3/12/2015.
  */
-public class DailyActivity extends Activity{
+public class DailyActivity extends Activity {
 
     static final int DIALOG_ERROR_CONNECTION = 1;
     TextView title, desc, backSign, asdfs;
@@ -37,24 +37,21 @@ public class DailyActivity extends Activity{
 
         initVar();
         checkInternet();
-
         Bundle extras = getIntent().getExtras();
-        if(extras != null) {
+        if (extras != null) {
             sign = extras.getString("sign");
             horoscope = extras.getString("horoscope");
-               finalUrl = "http://www.findyourfate.com/rss/"+ horoscope +"-feed.asp?sign=" + sign;
-
-
+            finalUrl = "http://www.findyourfate.com/rss/" + horoscope + "-feed.asp?sign=" + sign;
         }
 
         obj = new HandleXML(finalUrl);
         obj.fetchXML();
-        while(obj.parsingComplete);
-            desc.setText(obj.getDesc());
-            title.setText(obj.getTitle());
+        while (obj.parsingComplete) ;
+        desc.setText(obj.getDesc());
+        title.setText(obj.getTitle());
     }
 
-    public void BackClick(View v){
+    public void BackClick(View v) {
         Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
         overridePendingTransition(R.anim.abc_slide_in_top, R.anim.abc_slide_out_bottom);
@@ -64,15 +61,11 @@ public class DailyActivity extends Activity{
     public boolean isOnline(Context c) {
         ConnectivityManager cm = (ConnectivityManager) c.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo ni = cm.getActiveNetworkInfo();
+        return (ni != null && ni.isConnected());
 
-        if (ni != null && ni.isConnected()) {
-            return true;
-        } else {
-            return false;
-        }
     }
 
-    public void checkInternet(){
+    public void checkInternet() {
         if (!isOnline(this)) {
             showDialog(DIALOG_ERROR_CONNECTION);
         } else {
@@ -80,7 +73,7 @@ public class DailyActivity extends Activity{
         }
     }
 
-    public void initVar(){
+    public void initVar() {
         title = (TextView) findViewById(R.id.date);
         desc = (TextView) findViewById(R.id.desc);
         backSign = (TextView) findViewById(R.id.backSign);

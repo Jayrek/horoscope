@@ -16,29 +16,19 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 
     static final int DIALOG_ERROR_CONNECTION = 1;
-    private String hor;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_main);
 
-      checkInternet();
+        checkInternet();
     }
-
 
     public boolean isOnline(Context c) {
         ConnectivityManager cm = (ConnectivityManager) c.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo ni = cm.getActiveNetworkInfo();
-
         return (ni != null && ni.isConnected());
-
-//        if (ni != null && ni.isConnected()) {
-//            return true;
-//        } else {
-//            return false;
-//        }
     }
 
     @Override
@@ -145,7 +135,7 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-    public void checkInternet(){
+    public void checkInternet() {
         if (!isOnline(this)) {
             showDialog(DIALOG_ERROR_CONNECTION);
         } else {
